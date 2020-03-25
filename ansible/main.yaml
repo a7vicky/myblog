@@ -1,0 +1,39 @@
+---
+- hosts: webserver
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Install pip
+      yum: 
+        name: python27-python-pip
+        state: present
+              
+
+    - name: install docker-py
+      yum: 
+        name: docker-python
+        state: present             
+ 
+#    - name: current working dir
+#      shell: pwd
+
+    - name: Build Docker image from Dockerfile
+      docker_image:
+        path: myflaskapp/myblog
+        name: docker.io/garbagego/webapp
+        tag: latest
+        state: present
+        force: true
+        pull: false
+
+    - name: Running the container
+      docker_container:
+        name: myapp
+        image: "docker.io/garbagego/webapp:latest"
+        path: docker
+        state: running
+        ports:
+          - "5000:5555"
+  
+    - name: Check if container is running
+      shell: docker ps myapp
