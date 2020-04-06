@@ -138,12 +138,6 @@ ul.job-description li:before{
   color: #509e98;
 }
 
-footer {
- padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
- text-align: right;
-}
 
 @media only screen and (max-width: 768px) {
   .course {
@@ -168,3 +162,24 @@ footer {
     text-align: center;
   }
 }
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+}
+
+/*
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+*/
+
+.fab-fo {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
