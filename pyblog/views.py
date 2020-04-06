@@ -18,15 +18,6 @@ def home():
         year=datetime.now().year,
     )
 
-@app.route('/contact')
-def contact():
-    """Renders the contact page."""
-    return render_template(
-        'contact.html',
-        title='Contact',
-        year=datetime.now().year,
-        message='Your contact page.'
-    )
 
 @app.route('/about')
 def about():
@@ -38,3 +29,9 @@ def about():
         message='Your application description page.'
     )
 
+@app.route('/blog')
+def blog():
+    """Renders the blog page."""
+    return render_template(
+        'index.html',
+    )
