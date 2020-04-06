@@ -120,7 +120,7 @@ img::-moz-selection {
 
   #mainNav .navbar-nav>li.nav-item>a {
     padding: 10px 20px;
-    color: #fff;
+    color: black;
   }
 
   #mainNav .navbar-nav>li.nav-item>a:focus,#mainNav .navbar-nav>li.nav-item>a:hover {
@@ -152,7 +152,7 @@ img::-moz-selection {
   }
 
   #mainNav.is-fixed .navbar-nav>li.nav-item>a {
-    color: #212529;
+    color: black;
   }
 
   #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,#mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
@@ -167,7 +167,7 @@ img::-moz-selection {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #C0C0C0;
+  background-color: white;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -179,7 +179,7 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
+  background-color: #eee;
   opacity: .5;
 }
 
@@ -357,23 +357,35 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 0px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: #eee;
 }
 
-/*
+
 footer {
-  padding: 20px 0;
+  padding: 0px 0;
   text-align: center;
 }
-*/
 
 .fab {
   align-items: center !important;
   justify-content: center !important;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.8em;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  margin: 5px;
+  text-align: center;
 }
+
+a .fab {
+  color: black;
+}
+
 
 .highlight {
   background-color: #efefef;

@@ -9,11 +9,11 @@
 
 <style>
  header {
-      background-image: url("/static/img/bg.png");
+      background-color: white;
       }
 
 .fa {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50%;
   font-size: 2.2em;
   width: 2.2em;
@@ -24,8 +24,18 @@
 }
 
 a .fa {
-  color: white;
+  color: black;
 
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
 
 </style>
 
@@ -39,7 +49,7 @@ a .fa {
     </div>
     <h1> Abhishek </h1>
     <section>
-      <p> <font size="5"; color="CCFFFF"> Hello! My name is Abhishek. I work as Technical support engineer for OpenShift at Red Hat. I have 4 years of industry experience in DevOps and support to quickly deliver code, diagnose and fix the issue. Has good knowledge in Linux, cloud and cloud-native technologies. I am interested in learning new tools and technologies which help and improve Cloud-native based solution and adoption at industry level.</font></p> 
+      <p> <font size="5"; color="black"> Hello! My name is Abhishek. I work as Technical support engineer for OpenShift at Red Hat. I have 4 years of industry experience in DevOps and support to quickly deliver code, diagnose and fix the issue. Has good knowledge in Linux, cloud and cloud-native technologies. I am interested in learning new tools and technologies which help and improve Cloud-native based solution and adoption at industry level.</font></p> 
       
       <a href="{{ url_for('home') }}">
           <i class="fa fa-home"></i> 
@@ -56,6 +66,9 @@ a .fa {
       </a>
     </section>
   </header>
+
+<hr>
+
   <main>
     <section>
       <h3>Courses & Workshops</h3>

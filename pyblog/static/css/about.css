@@ -34,7 +34,7 @@ header {
   text-align: center;
   background-size: cover;
   background-position: fixed;
-  color: white;
+  color: #040101;
 }
 
 header section {
@@ -69,7 +69,7 @@ main section:not(:last-child) {
 }
 
 .fab {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50%;
   font-size: 2.2em;
   width: 2.2em;
@@ -80,7 +80,7 @@ main section:not(:last-child) {
 }
 
 a .fab {
-  color: white;
+  color: black;
 }
 
 .course, .skills {
