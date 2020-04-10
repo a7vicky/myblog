@@ -14,12 +14,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Custom fonts for this template -->
-  <link href="static/css/all.min.css" rel="stylesheet" type="text/css"> 
+  <link href="../static/css/blog-all.css" rel="stylesheet" type="text/css"> 
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="static/css/home.css" rel="stylesheet">
+  <link href="../static/css/blog.css" rel="stylesheet">
 
 </head>
 <body>
@@ -55,7 +55,6 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-           <a> <h1> <font color="black"> Abhishek's Blog </font></h1> </a>
             <span class="subheading" style="color: black">Kubernetes & Devops concepts</span>
           </div>
         </div>
@@ -69,76 +68,48 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
-          <a href="{{ url_for('blogpost') }}">
             <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+            <!--  Man must explore, and this is exploration at its greatest -->
             </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-          </a>
+    
+     
+<!-- Article -->
+{% block content %}{% endblock %}
+<!-- EnD artcile -->
+
+
+ 
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
+            <a href="{{ url_for('about') }}">Abhishek</a>
+            on September 24, 2019        
+<span class="likebtn-wrapper" data-identifier="item_1"> Like me</span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script> </p> 
         </div>
         <hr>
         <p> </P>
+
         <!-- Pager -->
+
+
+
+<!--
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
+
+-->
       </div>
     </div>
   </div>
 
-<p> </p>
   <!-- Footer -->
 
    <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">         
-<a href="https://github.com/garbagego" target="_blank"><i class="fab fa-github"></i></a>
-<a href="https://www.twitter.com/vicky18dec" target="_blank"><i class="fab fa-twitter"></i></a>
-<a href="https://www.linkedin.com/in/abhishek18dec/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <footer class="footer">        
+         <a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank"><i class="fab fa-facebook"></i></a>
+         <a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank"><i class="fab fa-twitter"></i></a>
+         <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&source={{source}}" target="blank"><i class="fab fa-linkedin"></i></a>
         </footer>
       </div>
     </div>

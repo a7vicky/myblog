@@ -35,3 +35,10 @@ def blog():
     return render_template(
         'index.html',
     )
+
+@app.route('/blogpost/kubernetes-auth')
+def blogpost():
+    """Renders the blog page."""
+    return render_template(
+        'blogpost/kubernetes-auth', template_folder='blogpost'
+    )
