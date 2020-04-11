@@ -7,5 +7,5 @@ if __name__ == '__main__':
          ssl_context='adhoc',
          host = '0.0.0.0',
          debug = True,
-         port = 8443
+         port = 8080
     )
