@@ -1,6 +1,14 @@
 {% extends "blog_layout.html" %}
 
 {% block content %}
-  <h3> This is the start of my child template</h3>
-  <h3> This is the end of my child template</h3>
+  <h2> Default Kubernetes Authentication Mechanism </h2>
+
+<p> Kubernetes is designed to be secured by default.
+Kubernetes clusters have two categories of users: service accounts managed by Kubernetes, and normal users. Nornal user is not managed by kubernetes.So kubernetes does not have object called user and it cannot be added by API calls.In contrast, service accounts are users managed by the Kubernetes API. They are bound to specific namespaces, and created automatically by the API server or manually through API calls. 
+</p>
+
+
+<p>API requests are tied to either a normal user or a service account, or are treated as anonymous requests. This means every process inside or outside the cluster, from a human user typing kubectl on a workstation, to kubelets on nodes, to members of the control plane, must authenticate when making requests to the API server, or be treated as an anonymous user.</p>
+
+ 
 {% endblock %}
