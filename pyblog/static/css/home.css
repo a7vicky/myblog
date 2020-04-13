@@ -76,8 +76,8 @@ img::-moz-selection {
 
 header.masthead {
   margin-bottom: 50px;
-  /* background: url("/static/img/bg.png") no-repeat center center;
-  background-color: #c0c0c0;
+  /* background: no-repeat center center;
+  background-color: white;
   background-attachment: scroll; */
   position: relative;
   /* background-size: cover; */
@@ -296,7 +296,7 @@ form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6;
 }
 
-.highlight {
+/* .highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
@@ -305,4 +305,4 @@ form .form-group:first-child .floating-label-form-group {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   margin: 20px 0 20px 0;
   overflow: scroll;
-}
+} */
