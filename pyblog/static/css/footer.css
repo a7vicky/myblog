@@ -6,8 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 1em;
   font-size: 16px;
 }
 .wrapper-footer a {
