@@ -1,72 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>About</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/css/about.css">
-
-<style>
- header {
-      background-color: white;
-      }
-
-.fa {
-  border: 1px solid black;
-  border-radius: 50%;
-  font-size: 2.2em;
-  width: 2.2em;
-  height: 2.2em;
-  line-height: 2.2em;
-  margin: 5px;
-  text-align: center;
-}
-
-a .fa {
-  color: black;
-
-
-hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-} 
-
-</style>
-
-
-</head>
-
-<body>
-  <header>
-    <div>
+{% extends "layout.html" %}
+{% block style %}
+<link rel="stylesheet" href="/static/css/about.css">
+{% endblock %}
+{% block content %}
+  <header class="about-header">
+    
+    <div class="about-main-header">
       <img src="static/img/vicky.jpg" />
+      <h1> Abhishek </h1>
     </div>
-    <section>
-      <p> <font size="5"; color="black"> Hello! My name is Abhishek. I work as Technical support engineer for OpenShift at Red Hat. I have 4 years of industry experience in DevOps and support to quickly deliver code, diagnose and fix the issue. Has good knowledge in Linux, cloud and cloud-native technologies. I am interested in learning new tools and technologies which help and improve Cloud-native based solution and adoption at industry level.</font></p> 
+    
+    <section class="about-main-body">
+      <p class="about-main-content"> Hello! My name is Abhishek. I work as Technical support engineer for OpenShift at Red Hat. I have 4 years of industry experience in DevOps and support to quickly deliver code, diagnose and fix the issue. Has good knowledge in Linux, cloud and cloud-native technologies. I am interested in learning new tools and technologies which help and improve Cloud-native based solution and adoption at industry level.</p> 
       
       <a href="{{ url_for('home') }}">
-          <i class="fa fa-home"></i> 
+          <i class="fa fa-home about-icon"></i> 
       </a>
       <a href="https://www.twitter.com/vicky18dec/" target="_blank">
-        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter about-icon"></i>
       </a>
       <a href="https://github.com/garbagego" target="_blank">
-        <i class="fab fa-github-alt"></i>
+        <i class="fab fa-github-alt about-icon"></i>
       </a>
       </a>
       <a href="https://www.linkedin.com/in/abhishek18dec/" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-linkedin-in about-icon"></i>
       </a>
     </section>
   </header>
-
-<hr>
 
   <main>
     <section>
@@ -153,35 +114,5 @@ hr {
       </article>
     </section>
   </main>
-
-
-<!--
-   <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer" style="align-items: center;">
-<a href="https://github.com/garbagego"><i class="fab fa-github"></i></a>
-<a href="https://www.twitter.com/vicky18dec"><i class="fab fa-twitter"></i></a>
-<a href="https://www.linkedin.com/in/abhishek18dec/" target="_blank"><i class="fab fa-linkedin-in"></i></a>    
-         </footer>
-      </div>
-   </div>
--->
-
-        <!-- Google Analytics -->
-        <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                ga('create', 'UA-112161421-1', 'auto');
-                ga('send', 'pageview', {
-                  'page': '/',
-                  'title': ''
-                });
-        </script>
-        <!-- End Google Analytics -->
-
-</body>
-</html>
+{% endblock %}
 
