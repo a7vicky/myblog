@@ -38,7 +38,7 @@ def blog():
 
 @app.route('/blogpost/kubernetes-auth')
 def blogpost():
-    """Renders the blog page."""
+    """Renders the blog post page."""
     return render_template(
-        'blogpost/kubernetes-auth', template_folder='blogpost'
+        'blogpost/kubernetes-auth.html', template_folder='blogpost'
     )

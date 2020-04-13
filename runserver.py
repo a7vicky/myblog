@@ -3,4 +3,9 @@ import os
 
 if __name__ == '__main__':
 
-    app.run(os.uname()[1], 5555 ,debug=True)
+    app.run(
+       # ssl_context='adhoc',
+         host = 'localhost',
+         debug = True,
+         port = 8080
+    )
