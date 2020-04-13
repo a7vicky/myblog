@@ -1,23 +1,24 @@
 {% extends "layout.html" %} {% block style %}
-<link href="/static/css/home.css" rel="stylesheet" />
+<link href="/static/css/blog.css" rel="stylesheet" />
 {% endblock %} {% block content %}
 <!-- Page Header -->
+
 <header class="masthead">
-  <!-- <div class="overlay"></div> -->
+  <!-- div class="overlay"></div --> 
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="site-heading">
-          <a href="{{ url_for('about') }}">
             <h1>Abhishek's Blog</h1>
-          </a>
           <span class="subheading">Kubernetes & Devops concepts</span>
         </div>
       </div>
     </div>
   </div>
+
 </header>
 
+<hr>
 <!-- Main Content -->
 <div class="container">
   <div class="row">

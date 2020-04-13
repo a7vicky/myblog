@@ -229,7 +229,10 @@ header.masthead .post-heading .meta a {
   text-decoration: underline;
   color: #0085a1;
 }
-
+.post-btn {
+  background-color: #0085a1;
+  color: #fff;
+}
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
